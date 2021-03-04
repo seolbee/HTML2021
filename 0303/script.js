@@ -13,4 +13,21 @@ $(function(){
         $(imgs[next]).css({top: '-100%'}).animate({top:'0'}, 800);
         now = next;
     }, 3000);
+
+    $(".tab > ul > li").click(function(e){
+        $(".tab > ul > li").removeClass("activity");
+        $(e.target).addClass("activity");
+        let idx = $(e.target).data("idx");
+        $(".box > *").removeClass("on")
+        $(".box > *").eq(idx).addClass("on");
+    });
+
+    $("table > tbody > tr:nth-child(1) > td").eq(0).click(function(e){
+        console.log(1);
+        $(".popup").css({display:"block"});
+    });
+
+    $(".close").click(function(e){
+        $(".popup").css({display:"none"});
+    })
 })
