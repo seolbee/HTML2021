@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #222328;
+    outline: none;
 }
 
 .container{
@@ -44,6 +45,7 @@ header > *{
     display: flex;
     width: 100%;
     flex: 1;
+    height: 30px;
 }
 
 #main > li{
@@ -52,7 +54,7 @@ header > *{
     flex: 1;
     align-items: center;
     background-color: #eee;
-    height: 30px;
+    height: 100%;
     padding-top: 5px;
     position: relative;
 }
@@ -62,7 +64,7 @@ header > *{
     color: white;
 }
 
-#main > li > #sub{
+#main > li > .sub{
     display: none;
     width: 100%;
     text-align: center;
@@ -72,13 +74,13 @@ header > *{
     background-color: #000;
 }
 
-#sub > li{
+.sub > li{
     color:white;
     height: 30px;
     line-height: 30px;
 }
 
-#sub > li:hover{
+.sub > li:hover{
     background-color: #eee;
     color: #000;
 }
@@ -166,7 +168,7 @@ tr{
 }
 
 .bener > img{
-    display: inline;
+    display: inline-block;
     width: 150px;
 }
 
