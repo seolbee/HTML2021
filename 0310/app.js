@@ -1,8 +1,12 @@
 window.onload = function(){
+    console.log();
     $("#main > li").hover(function(){
-        $(this).children(".sub").stop().slideDown();
+        $(".sub").stop().slideDown();
+        $(".back").eq(0).stop().slideDown();
+        
     }, function(){
-        $(this).children(".sub").stop().slideUp();
+        $(".sub").stop().slideUp();
+        $(".back").stop().slideUp();
     });
 
     let imgs = $("#visual > .img");

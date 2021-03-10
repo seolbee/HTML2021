@@ -76,6 +76,7 @@ header{
     text-align: center;
     background-color: #7cff70;
     position: absolute;
+    z-index: 2;
     top: 100%;
 }
 
@@ -241,4 +242,14 @@ footer{
 .popup_box > .button_box{
     text-align: right;
     padding: 10px 0;
+}
+
+.back{
+    background-color:#7cff70;
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 1;
 }
