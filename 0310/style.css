@@ -48,6 +48,7 @@ header{
 .menu{
     width: 600px;
     margin-top: 70px;
+    position: relative;
 }
 
 #main{
@@ -87,6 +88,17 @@ header{
 
 #main > li > .sub > li:hover{
     background-color: #b3ffac;
+}
+
+.back{
+    background-color:#7cff70;
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    right: -30px;
+    top: 100%;
+    display: none;
+    z-index: 1;
 }
 
 #visual{
@@ -216,6 +228,8 @@ footer{
     width: 100%;
     height: 100%;
     position: fixed;
+    left:0;
+    top: 0;
     z-index: 10;
 }
 
@@ -242,14 +256,4 @@ footer{
 .popup_box > .button_box{
     text-align: right;
     padding: 10px 0;
-}
-
-.back{
-    background-color:#7cff70;
-    width: 1200px;
-    height: 100px;
-    position: absolute;
-    left: 0;
-    display: none;
-    z-index: 1;
 }
