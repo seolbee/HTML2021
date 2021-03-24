@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -55,34 +57,36 @@
             <section id="content">
                 <div class="tabbox">
                     <div class="tabs">
-                        <span class=".info">공지사항</span>
-                        <span class=".gallery">갤러리</span>
+                        <span class="info active">공지사항</span>
+                        <span class="gallery">갤러리</span>
                     </div>
-                    <div class="info_box">
-                        <table>
-                            <tr>
-                                <td>라이팅 동호회 안내</td>
-                                <td>2020-06-15</td>
-                            </tr>
-                            <tr>
-                                <td>부산 지역 행사 안내</td>
-                                <td>2020-06-10</td>
-                            </tr>
-                            <tr>
-                                <td>2020 전국 빛축제 박람회</td>
-                                <td>2020-06-08</td>
-                            </tr>
-                            <tr>
-                                <td>7월 행사 안내</td>
-                                <td>2020-06-01</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="gallery_box">
-                        <div class="box">
-                            <img src="contents/gallery1.jpg" alt="img">
-                            <img src="contents/gallery2.jpg" alt="img">
-                            <img src="contents/gallery3.jpg" alt="img">
+                    <div class="content_box">
+                        <div class="info_box active">
+                            <table>
+                                <tr>
+                                    <td>라이팅 동호회 안내</td>
+                                    <td>2020-06-15</td>
+                                </tr>
+                                <tr>
+                                    <td>부산 지역 행사 안내</td>
+                                    <td>2020-06-10</td>
+                                </tr>
+                                <tr>
+                                    <td>2020 전국 빛축제 박람회</td>
+                                    <td>2020-06-08</td>
+                                </tr>
+                                <tr>
+                                    <td>7월 행사 안내</td>
+                                    <td>2020-06-01</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="gallery_box">
+                            <div class="box">
+                                <img src="contents/gallery1.jpg" alt="img">
+                                <img src="contents/gallery2.jpg" alt="img">
+                                <img src="contents/gallery3.jpg" alt="img">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,9 +96,9 @@
                     <img src="contents/banner3.png" alt="img">
                 </div>
                 <div class="link_box">
-                    <button>오시는 길 <img src="contents/shortcut.png" alt="img"></button>
-                    <button>축제일정 <img src="contents/shortcut.png" alt="img"></button>
-                    <button>기념품샵 <img src="contents/shortcut.png" alt="img"></button>
+                    <button><span>오시는 길</span><img src="contents/shortcut.png" alt="img"></button>
+                    <button><span>축제일정</span><img src="contents/shortcut.png" alt="img"></button>
+                    <button><span>기념품샵</span><img src="contents/shortcut.png" alt="img"></button>
                 </div>
             </section>
             <footer>
@@ -118,7 +122,7 @@
             <p>일시 : 2020년 6월 28일</p>
             <p>장소 : 해운대 구청 2층 회의실</p>
             <div class="button_box">
-                <button>&times; 닫기</button>
+                <button class="close">&times; 닫기</button>
             </div>
         </div>
     </div>
